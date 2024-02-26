@@ -1,4 +1,4 @@
-==================== RHEL.X URLs ==================================
+==================== RHEL.X URLs ===============================================================================
 # Red Hat Errata page
 https://access.redhat.com/errata/RHBA-2017:1929
 # Red Hat Package page
@@ -23,4 +23,13 @@ yum updateinfo info "RHSA-2021:5226"
 
 # Checks a specific RHSA 
 yum updateinfo list security --installed | grep -i  "RHSA-2021:5226"
+
+
+===================== RHEL FAQ =====================================================================================
+Why is my security scanner reporting my product as vulnerable to this vulnerability even though my product version is fixed or not affected?
+
+In order to maintain code stability and compatibility, Red Hat usually does not rebase packages to entirely new versions. 
+Instead, we backport fixes and new features to an older version of the package we distribute. 
+This can result in some security scanners that only consider the package version to report the package as vulnerable. 
+To avoid this, we suggest that you use an approved vulnerability scanner from our Red Hat Vulnerability Scanner Certification program.
 
