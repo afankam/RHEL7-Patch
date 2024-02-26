@@ -1,4 +1,4 @@
-==================== RHEL7 URLs ==================================
+==================== RHEL.X URLs ==================================
 # Red Hat Errata page
 https://access.redhat.com/errata/RHBA-2017:1929
 # Red Hat Package page
@@ -6,7 +6,15 @@ https://access.redhat.com/downloads/content/package-browser
 # Red Hat CVE urls 
 https://access.redhat.com/security/security-updates/cve
 
-==================== RHEL Checking installed Red Hat Security Advisories (RHSA) =================================
+==================== RHEL 7 Checking installed Red Hat Security Advisories (RHSA) ===============================
+# List all security updates which are installed on the host
+  yum updateinfo list security installed 
+
+# Checks a specific RHSA
+  yum updateinfo list security installed | grep -i "RHSA-2022:1066"
+
+
+==================== RHEL8 Checking installed Red Hat Security Advisories (RHSA) =================================
 # List all security updates which are installed on the host
  yum updateinfo list security --installed
 
@@ -15,3 +23,4 @@ yum updateinfo info "RHSA-2021:5226"
 
 # Checks a specific RHSA 
 yum updateinfo list security --installed | grep -i  "RHSA-2021:5226"
+
