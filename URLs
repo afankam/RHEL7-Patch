@@ -3,8 +3,11 @@ https://access.redhat.com/errata/RHBA-2017:1929
 https://access.redhat.com/downloads/content/package-browser
 
 ==================== RHEL Checking installed Red Hat Security Advisories (RHSA) =================================
-# Checks all installed RHSA installed on system
+# List all security updates which are installed on the host
  yum updateinfo list security --installed
+
+# Display a specific advisory
+yum updateinfo info "RHSA-2021:5226"
 
 # Checks a specific RHSA 
 yum updateinfo list security --installed | grep -i  "RHSA-2021:5226"
