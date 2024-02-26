@@ -1,6 +1,10 @@
 ==================== RHEL7 URLs ==================================
+# Red Hat Errata page
 https://access.redhat.com/errata/RHBA-2017:1929
+# Red Hat Package page
 https://access.redhat.com/downloads/content/package-browser
+# Red Hat CVE urls 
+https://access.redhat.com/security/security-updates/cve
 
 ==================== RHEL Checking installed Red Hat Security Advisories (RHSA) =================================
 # List all security updates which are installed on the host
